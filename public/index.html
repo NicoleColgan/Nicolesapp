@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>this is nicoles app</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.0.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.0.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.0.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.0.1/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.0.1/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.0.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.0.1/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.0.1/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.0.1/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.0.1/firebase-performance.js"></script>
+    <!--
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+
+    <script src="javascript/getComments.js"></script>
+    <script src="javascript/postComments.js"></script>
+    <script src="javascript/deleteComment.js"></script>
+
+  </head>
+  <body>
+  <a href="template.html">about us</a>
+  <button onclick="postComments()">Post</button>
+  <button onclick="getComments()">Get comments</button>
+
+  <input type="text" placeholder="@handle" id="handle">
+  <input type="text" placeholder="@comments" id="comment">
+  <div id="comments"></div>
+  </body>
+
+
+</html>
