@@ -52,3 +52,11 @@ exports.deleteComment = functions.https.onRequest((request,response)=>{
     })
   });
 });
+exports.login = functions.https.onRequest((request,response)=>{
+  cors(request,response,()=>{
+    //your function body goes here
+    
+      response.send("succesfully logged in ");
+    
+  });
+});
